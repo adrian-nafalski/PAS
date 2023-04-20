@@ -1,0 +1,71 @@
+Zadanie 4
+-------------
+
+LOGIN:
+echo "adrianoo" | base64                    
+YWRyaWFub28K
+
+PASSWORD:
+echo "P4SInf2023" | base64
+UDRTSW5mMjAyMwo=
+       
+MAIL:                     
+echo "adrian.nafalski01@gmail.com" | base64 
+YWRyaWFuLm5hZmFsc2tpMDFAZ21haWwuY29tCg==
+                   
+---------------------------------------------
+
+telnet 127.0.0.1 587
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+220 example.com ESMTP Postfix
+EHLO thinkpad
+250-mail.mydomain.com
+250-PIPELINING
+250-SIZE 52428800
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+STARTTLS
+220 2.0.0 Ready to start TLS
+AUTH LOGIN
+334 YWRyaWFub28K
+YWRyaWFuLm5hZmFsc2tpMDFAZ21haWwuY29tCg==
+334 UGFzc3dvcmQ6
+UDRTSW5mMjAyMwo=
+235 2.7.0 Authentication successful
+MAIL FROM: <adrian.nafalski@adres.pl>
+250 2.1.0 Ok
+RCPT TO: <adrian.nafalski@adres.pl>
+250 2.1.5 Ok
+DATA
+354 End data with <CR><LF>.<CR><LF>
+Subject: Test
+
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary= "----=_NextPart_000_0000_01D795C6.92B03F70"
+
+------=_NextPart_000_0000_01D795C6.92B03F70
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+Przykładowa treść wiadomości.
+
+------=_NextPart_000_0000_01D795C6.92B03F70
+Content-Type: text/plain;
+Content-Disposition: attachment; filename="plik.txt"
+Content-Transfer-Encoding: base64
+
+UHJ6eWvFgmFkb3dhIHdpYWRvbW/Fm8SHCg==
+
+------=_NextPart_000_0000_01D795C6.92B03F70--
+.
+250 2.0.0 Ok: queued as 12345
+QUIT
+221 2.0.0 Bye
+Connection closed by foreign host.

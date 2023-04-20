@@ -1,0 +1,33 @@
+Zadanie 3
+-------------
+
+telnet 127.0.0.1 587
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+EHLO thinkpad
+220 example.com ESMTP Postfix
+250-example.com
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+MAIL FROM: <nadawca@example.com>
+250 2.1.0 Ok
+RCPT TO: <odbiorca@example.com>
+250 2.1.5 Ok
+DATA
+Subject: Temat wiadomości
+From: <inny_nadawca@example.com>
+To: <odbiorca@example.com>
+
+Treść wiadomości.
+.
+250 2.0.0 Ok: queued as 123456789
+QUIT
+221 2.0.0 Bye
+Connection closed by foreign host.

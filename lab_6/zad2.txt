@@ -1,0 +1,35 @@
+Zadanie 2
+-----------
+
+$ telnet 127.0.0.1 587
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+220 example.com ESMTP server ready
+EHLO thinkpad
+250-example.com at your service, [127.0.0.1]
+250-SIZE 52428800
+250-8BITMIME
+250-STARTTLS
+250-AUTH LOGIN PLAIN
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+MAIL FROM: <sender@example.com>
+250 2.1.0 Ok
+RCPT TO: <recipient1@example.com>
+250 2.1.5 Ok
+RCPT TO: <recipient2@example.com>
+250 2.1.5 Ok
+DATA
+354 End data with <CR><LF>.<CR><LF>
+Subject: Example Subject
+
+This is the body of the email.
+
+.
+250 2.0.0 Ok: queued as ABCDEF123456
+QUIT
+221 2.0.0 Bye
+Connection closed by foreign host.

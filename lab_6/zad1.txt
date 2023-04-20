@@ -1,0 +1,56 @@
+Zadanie 1
+---------
+
+LOGIN:
+echo "adrianoo" | base64                    
+YWRyaWFub28K
+
+PASSWORD:
+echo "P4SInf2023" | base64
+UDRTSW5mMjAyMwo=
+                                               
+---------------------------------------------
+
+telnet 127.0.0.1 587
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+220 mail.mydomain.com ESMTP Postfix
+EHLO thinkpad
+250-mail.mydomain.com
+250-PIPELINING
+250-SIZE 52428800
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+STARTTLS
+220 2.0.0 Ready to start TLS
+AUTH LOGIN
+334 VXNlcm5hbWU6
+YWRyaWFub28K
+334 UGFzc3dvcmQ6
+UDRTSW5mMjAyMwo=	
+235 2.7.0 Authentication successful
+MAIL FROM: <test@mail.com>
+250 2.1.0 Ok
+RCPT TO: <recipient@mail.com>
+250 2.1.5 Ok
+DATA
+354 End data with <CR><LF>.<CR><LF>
+Subject: Test message
+Test message body.
+
+.
+250 2.0.0 Ok: queued as ABCDEFG123
+QUIT
+221 2.0.0 Bye
+Connection closed by foreign host.
+
+
+
+
+
