@@ -1,0 +1,17 @@
+Zadanie 2
+---------
+
+$ telnet pop.gmail.com 995
+Trying 74.125.130.109...
+Connected to pop.gmail.com.
+Escape character is '^]'.
++OK Gpop ready for requests from 35.185.184.249 b7-v6mb50520752wra
+USER adrianoo@gmail.com
++OK send PASS
+PASS 12345
++OK Welcome.
+STAT
++OK 2 1834
+QUIT
++OK Farewell.
+Connection closed by foreign host.

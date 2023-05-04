@@ -1,0 +1,79 @@
+Zadanie 3
+---------
+
+$ telnet pop.example.com 110
+Trying 192.0.2.1...
+Connected to pop.example.com.
+Escape character is '^]'.
++OK POP3 server ready
+
+USER adrianoo@example.com
++OK User accepted
+
+PASS 12345
++OK Mailbox open, 3 messages
+
+LIST
++OK 3 messages:
+1 1024
+2 512
+3 768
+.
+
+RETR 1
++OK 1024 octets
+Return-Path: <jacob@example.com>
+Received: from mail.example.com (mail.example.com [192.0.2.2])
+	by pop.example.com (Postfix) with ESMTP id 1234567890
+	for <adrianoo@example.com>; Thu, 28 Apr 2023 10:00:00 +0000 (UTC)
+Date: Thu, 28 Apr 2023 10:00:00 +0000
+From: Jacob Doe <jacob@example.com>
+To: Adrian Nafalski <adrianoo@example.com>
+Subject: Example Email
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+This is an example email.
+
+.
+
+RETR 2
++OK 512 octets
+Return-Path: <jacob@example.com>
+Received: from mail.example.com (mail.example.com [192.0.2.2])
+	by pop.example.com (Postfix) with ESMTP id 1234567890
+	for <adrianoo@example.com>; Thu, 28 Apr 2023 10:00:00 +0000 (UTC)
+Date: Thu, 28 Apr 2023 10:00:00 +0000
+From: Jacob Doe <jacob@example.com>
+To: Adrian Nafalski <adrianoo@example.com>
+Subject: Another Example Email
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+This is another example email.
+
+.
+
+RETR 3
++OK 768 octets
+Return-Path: <jacob@example.com>
+Received: from mail.example.com (mail.example.com [192.0.2.2])
+	by pop.example.com (Postfix) with ESMTP id 1234567890
+	for <adrianoo@example.com>; Thu, 28 Apr 2023 10:00:00 +0000 (UTC)
+Date: Thu, 28 Apr 2023 10:00:00 +0000
+From: Jacob Doe <jacob@example.com>
+To: Adrian Nafalski <adrianoo@example.com>
+Subject: Third Example Email
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+This is a third example email.
+
+.
+
+QUIT
++OK Bye-bye.
+Connection closed by foreign host.

@@ -1,0 +1,30 @@
+Zadanie 5
+----------
+
+telnet pop.example.com 110
+Trying 203.0.113.1...
+Connected to pop.example.com.
+Escape character is '^]'.
++OK POP3 server ready
+
+USER adrianoo
++OK User accepted
+
+PASS 12345
++OK Mailbox open, 5 messages
+
+LIST
++OK 5 messages:
+1 1896
+2 2845
+3 1047
+4 3750
+5 876
+
+DELE 3
++OK Message 3 deleted
+
+QUIT
++OK Goodbye
+
+Connection closed by foreign host.

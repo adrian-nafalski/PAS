@@ -1,0 +1,23 @@
+Zadanie 1
+----------
+
+$ telnet pop3.example.com 110
+Trying 203.0.113.1...
+Connected to pop3.example.com.
+Escape character is '^]'.
++OK POP3 server ready
+
+USER adrianoo
++OK User name accepted, password please
+
+PASS 12345
++OK Mailbox open, 5 messages
+
+STAT
++OK 5 8192
+
+QUIT
++OK Bye-bye
+
+Connection closed by foreign host.
+

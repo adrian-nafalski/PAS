@@ -1,0 +1,36 @@
+Zadanie 4
+----------
+
+telnet pop3.example.com 110
+Trying 192.168.0.100...
+Connected to pop3.example.com.
+Escape character is '^]'.
++OK POP3 server ready <18934.1214615538@pop3.example.com>
+USER adrianoo@example.com
++OK
+PASS 12345
++OK Logged in.
+STAT
++OK 5 14250
+LIST
++OK 5 messages (14250 octets)
+1 2345
+2 3250
+3 1050
+4 4500
+5 3205
+RETR 4
++OK 4500 octets
+From: adrianoo@example.com
+To: jacob@example.com
+Subject: Important document
+
+Dear Jacob,
+
+Please find attached the important document that we discussed during our meeting yesterday.
+
+Best regards,
+Adrian
+QUIT
++OK Bye-bye.
+Connection closed by foreign host.
