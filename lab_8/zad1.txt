@@ -1,0 +1,44 @@
+Zadanie 1
+---------
+
+telnet 192.0.2.123 143
+Trying 192.0.2.123...
+Connected to imap.example.com.
+Escape character is '^]'.
+* OK IMAP4 server ready
+
+LOGIN adrian@example.com pass123
+OK LOGIN completed
+
+SELECT INBOX
+* 42 EXISTS
+* 0 RECENT
+* OK [UIDVALIDITY 3857529045] UID validity status
+* OK [UIDNEXT 43] Predicted next UID
+* FLAGS (\Answered \Flagged \Deleted \Seen \Draft)
+* OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft)] Permanent flags
+* OK [HIGHESTMODSEQ 354]
+OK [READ-WRITE] SELECT completed
+
+STATUS INBOX (MESSAGES)
+* STATUS INBOX (MESSAGES 42)
+OK STATUS completed
+
+FETCH 1 BODY[]
+* 1 FETCH (BODY[] {1024}
+From: Adrian Nafalski <adriannafalski@example.com>
+To: Will Smith <willsmith@example.com>
+Subject: Hello
+Date: Mon, 20 May 2023 15:30:00 +0000
+
+This is the body of the email message.
+)
+OK FETCH completed
+
+STORE 1 +FLAGS (\Seen)
+* 1 FETCH (FLAGS (\Seen))
+OK STORE completed
+
+LOGOUT
+* BYE Logging out
+OK LOGOUT completed
