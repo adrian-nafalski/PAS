@@ -37,73 +37,73 @@
 
 ## **Lab 1**
 
-- Opis [zadania](lab_1\lab1.pdf) do wykonania
+- Opis [zadania](lab_1/lab1.pdf) do wykonania
 
 [Tutaj](lab_1) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 2**
 
-- Opis [zadania](lab_2\lab2.pdf) do wykonania
+- Opis [zadania](lab_2/lab2.pdf) do wykonania
   
 [Tutaj](lab_2) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 3**
 
-- Opis [zadania](lab_3\lab3.pdf) do wykonania
+- Opis [zadania](lab_3/lab3.pdf) do wykonania
   
 [Tutaj](lab_3) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 4**
 
-- Opis [zadania](lab_4\lab4.pdf) do wykonania
+- Opis [zadania](lab_4/lab4.pdf) do wykonania
 
 [Tutaj](lab_4) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 5**
 
-- Opis [zadania](lab_5\lab5.pdf) do wykonania
+- Opis [zadania](lab_5/lab5.pdf) do wykonania
   
 [Tutaj](lab_5) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 6**
 
-- Opis [zadania](lab_6\lab6.pdf) do wykonania
+- Opis [zadania](lab_6/lab6.pdf) do wykonania
   
 [Tutaj](lab_6) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 7**
 
-- Opis [zadania](lab_7\lab7.pdf) do wykonania
+- Opis [zadania](lab_7/lab7.pdf) do wykonania
   
 [Tutaj](lab_7) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 8**
 
-- Opis [zadania](lab_8\lab8.pdf) do wykonania
+- Opis [zadania](lab_8/lab8.pdf) do wykonania
   
 [Tutaj](lab_8) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 9**
 
-- Opis [zadania](lab_9\lab9.pdf) do wykonania
+- Opis [zadania](lab_9/lab9.pdf) do wykonania
   
 [Tutaj](lab_9) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 10**
 
-- Opis [zadania](lab_10\lab10.pdf) do wykonania
+- Opis [zadania](lab_10/lab10.pdf) do wykonania
   
 [Tutaj](lab_10) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 11**
 
-- Opis [zadania](lab_11\lab12.pdf) do wykonania
+- Opis [zadania](lab_11/lab12.pdf) do wykonania
   
 [Tutaj](lab_11) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
 ## **Lab 12**
 
-- Opis [zadania](lab_12\lab14.pdf) do wykonania
+- Opis [zadania](lab_12/lab14.pdf) do wykonania
   
 [Tutaj](lab_12) znajdują się wszystkie materiały i wykonane zadania związane z tym laboratorium.
 
